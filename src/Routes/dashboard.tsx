@@ -1,20 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import FrontLayout from "../Components/Layout/Front";
 import HomePage from "../Pages/Front/HomePage/HomePage";
 
-const AppRoutes = () => {
+const DashboardRoutes = () => {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/dashboard"
         element={
-          <FrontLayout>
-            <HomePage />
-          </FrontLayout>
+          <HomePage />
         }
       />
     </Routes>
   );
 };
 
-export default AppRoutes;
+export default DashboardRoutes;
